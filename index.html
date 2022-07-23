@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="language" content="NL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunnyside Agency">
+    <meta name="author" content="Isaura Pestano">
+    <meta name="keywords" content="sunnyside, agency">
+    <title>Sunnyside Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;1,600&family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700;1,9..144,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <section class="logo-nav">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo Sunnyside"></a>
+        </section>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#" class="contact-button">CONTACT</a>
+        </nav>
+    </header>
+
+    <header class="navbar-mobile">
+        <section class="logo-nav">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo Sunnyside"></a>
+        </section>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="contact-button2">CONTACT</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </header>
+    
+    <main>
+        <section class="creatives">
+            <h1>We are creatives</h1>
+            <article class="creatives-img">
+                <img src="images/icon-arrow-down.svg" alt="Arrow Down">
+            </article>
+        </section>
+
+        <section class="colored">
+            <article class="brand">
+                <p class="bigger-text">Transform your brand</p>
+                <p class="smaller-text">  We are a full-service creative agency specializing in helping brands grow fast. 
+                    Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="learn-more1">Learn more</a>
+            </article>
+            <article class="egg"></article>
+            <article class="glass"></article>
+            <article class="audience">
+                <p class="bigger-text">Stand out to the right audience</p>
+                <p class="smaller-text">  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+                </p>
+                <a href="#" class="learn-more2">Learn more</a>
+            </article>
+        </section>
+
+        <section class="fruits">
+            <article class="cherry">
+                <div>
+                <p class="graphic">Graphic design</p>
+                <p class="graphic-text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.                </p>
+            </div>
+            </article>
+            <article class="orange">
+                <div>
+                <p class="photography">Photography</p>
+                <p class="photography-text">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+                </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="testimonials">
+            <h1>Client testimonials</h1>
+            <section class="clients">
+            <article class="client">
+                <div class="icon emily"></div>
+                <p class="text-client"> We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                </p>
+                <p class="name-client">Emily R.</p>
+                <p class="work-client">Marketing Director</p>
+            </article>
+            <article class="client">
+                <div class="icon thomas"></div>
+                <p class="text-client"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+                </p>
+                <p class="name-client">Thomas S.</p>
+                <p class="work-client">Chief Operating Officer</p>
+            </article>
+            <article class="client">
+                <div class="icon jennie"></div>
+                <p class="text-client">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                </p>
+                <p class="name-client">Jennie F.</p>
+                <p class="work-client">Business Owner</p>
+            </article>
+        </section>
+        </section>
+
+        <section class="random-images">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+            <div class="img4"></div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+        <img src="images/logo copy.svg" alt="Logo" class="logo-footer">
+        <article class="nav-footer">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+        </article>
+        <article class="social-icons">
+            <a href="#"><img src="images/icon-facebook.svg" alt="Facebook" class="socials-hover"></a>
+            <a href="#"><img src="images/icon-instagram.svg" alt="Instagram" class="socials-hover"></a>
+            <a href="#"><img src="images/icon-twitter.svg" alt="Twitter" class="socials-hover"></a>
+            <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest" class="socials-hover"></a>
+        </article>
+    </section>
+    </footer>
+    
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        })
+
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            NavMenu.classList.remove('active');
+        }))
+    </script>
+</body>
+</html>
