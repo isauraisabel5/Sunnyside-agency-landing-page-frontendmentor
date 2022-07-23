@@ -676,6 +676,9 @@ width: 80vw;
     .brand {
         order: 1;
         width:80%;
+        display: flex;
+flex-direction: column;
+align-items: flex-start;
     }
 
     .egg {
@@ -693,6 +696,13 @@ width: 80vw;
     .audience {
         order: 4;
         width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .smaller-text {
+        text-align: left;
     }
 
     .fruits {
