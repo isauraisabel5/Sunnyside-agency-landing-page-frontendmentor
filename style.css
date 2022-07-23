@@ -681,6 +681,11 @@ flex-direction: column;
 align-items: flex-start;
     }
 
+    .bigger-text {
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
     .egg {
         order:2;
         background-position: center;
